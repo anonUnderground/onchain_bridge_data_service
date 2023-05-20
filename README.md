@@ -3,7 +3,7 @@ A framework to deploy smart contracts and subscribe to events for automated resp
 
 **Directory Guide:**
 
-data_service/
+onchain_bridge_data_service/
 
 ├── .gitignore # Git ignore file
 
