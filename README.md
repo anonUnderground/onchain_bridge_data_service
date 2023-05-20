@@ -13,6 +13,8 @@ onchain_bridge_data_service/
 
 ├── truffle-config.js # Truffle configuration file
 
+├── config.js # index.js configuration file
+
 ├── .env # File to keep secrets
 
 ├── index.js # JavaScript file to interact with the smart contract and listen to events
