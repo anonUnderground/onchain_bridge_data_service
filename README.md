@@ -43,9 +43,26 @@ A framework to deploy smart contracts and subscribe to events for automated resp
 ## 7. Install Truffle: 
 
    - Truffle is a development framework, based in JavaScript, for Ethereum.
-   - To install, run the following in the directory you are working in:
+   - To install, run the following in the terminal:
 
 npm install -g truffle
 
-## 8. Configure Truffle by editing the 'truffle-config.js' file
+   - You also need to install HDWallet Provider by running the following in ther teminal:
+   - You will need ti have [Git](Visit the official Git website: https://git-scm.com/downloads) installed on your system.
+
+npm install @truffle/hdwallet-provider
+
+## 8. Configure Truffle
+
+   - Update the .env file with your secret phrase and RPC endpoint
+   - You may need to enable scripts in your directory, you can do this for a local user by running the following in the terminal:
+
+   1) Set-ExecutionPolicy -Scope CurrentUser
+   2) ExecutionPolicy: RemoteSigned
+
+   - Run the following in the terminal: truffle init
+   - This will create truffle-config.js and contracts, migrations, and test folders
+   - If you wish to work with this repository there is no need to overwrite the files
+
+
 
