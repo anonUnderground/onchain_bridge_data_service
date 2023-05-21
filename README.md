@@ -185,6 +185,8 @@ Verifying contracts on sourcify
    
 ## 11. Configure Automation Node
    
-      - Grab contract address and ABI from "contract" tab (https://sepolia.etherscan.io/address/0xC72968e4E4BE0F1175a645f63B57a7700e21D77f#code)
+   - Grab contract address and ABI from "contract" tab (https://sepolia.etherscan.io/address/0xC72968e4E4BE0F1175a645f63B57a7700e21D77f#code)
       
 ![11 - Source Code](https://github.com/anonUnderground/onchain_bridge_data_service/assets/134157241/11876898-e91b-4295-b677-bd3bf4c4896a)
+
+   - Add configuration information to 'config.js' file (ABI and contract address)
