@@ -9,18 +9,18 @@ A framework to deploy smart contracts and subscribe to events for automated resp
 - This tutorial uses the [Metamask Chrome Extension](https://metamask.io/download/) for simplicity.
 
 ### 2. Create an [Alchemy](https://www.alchemy.com/) account and create an app:
-![1- Setting Up Alchemy App](https://github.com/anonUnderground/onchain_bridge_data_service/assets/134157241/cdd0e813-085a-4646-bf10-69c33ef481e9)
+![1- Setting Up Alchemy App](https://github.com/anonUnderground/onchain_bridge_data_service/assets/134157241/843a6001-ce66-4a19-89b7-e1510894fb8e)
 
 ### 3. Connect your metamask wallet to the Sepolia ETH testnet by clicking "Add To Wallet":
-![2- Alchemy RPC Provider Dashboard](https://github.com/anonUnderground/onchain_bridge_data_service/assets/134157241/66499a65-2891-4310-81a7-e374cc76f28e)
-![8 - Add Testnet to wallet](https://github.com/anonUnderground/onchain_bridge_data_service/assets/134157241/c2ae97c8-a019-4ba5-a150-87c49ad409f3)
+![2- Alchemy RPC Provider Dashboard](https://github.com/anonUnderground/onchain_bridge_data_service/assets/134157241/0407191c-6cdf-4f18-aa5a-c8adeb8d39f4)
+![8 - Add Testnet to wallet](https://github.com/anonUnderground/onchain_bridge_data_service/assets/134157241/087e2d8c-650e-4cc9-9b17-6eb1346c951a)
 
 ### 4. Dashboards help monitor RPC activity and perofmance of your decentralized applications:
-![3 - Alchemy RPC Provider Dashboard](https://github.com/anonUnderground/onchain_bridge_data_service/assets/134157241/eabb7de8-73cf-4f4b-9063-c560e08e2aec)
+![3 - Alchemy RPC Provider Dashboard](https://github.com/anonUnderground/onchain_bridge_data_service/assets/134157241/860d0989-4f35-46d7-afb8-c73e1dfbcf7d)
 
 ### 5. Load some testnet etherum to your wallet using a [faucet](https://sepoliafaucet.com/) (this tutorial uses the Sepolia ETH Testnet):
 - Other testnets have their own faucets
-![10 - Testnet faucet](https://github.com/anonUnderground/onchain_bridge_data_service/assets/134157241/629230ed-7eef-4b4e-8282-2e75100bc81a)
+![10 - Testnet faucet](https://github.com/anonUnderground/onchain_bridge_data_service/assets/134157241/211b87cb-1701-4fcf-921e-df7e4feadced)
 
 ### 6. Install [node.js](https://nodejs.org/en/download/)
 
@@ -127,8 +127,9 @@ truffle run verify ResponseContract --network sepolia
 ## 11. Configure Automation Node
    
    - Grab contract address and ABI from "contract" tab (https://sepolia.etherscan.io/address/0xC72968e4E4BE0F1175a645f63B57a7700e21D77f#code)
-      
-![11 - Source Code](https://github.com/anonUnderground/onchain_bridge_data_service/assets/134157241/11876898-e91b-4295-b677-bd3bf4c4896a)
+
+
+![11 - Source Code](https://github.com/anonUnderground/onchain_bridge_data_service/assets/134157241/5db99550-9efc-42e8-9ba9-fdca25d64c00)
 
    - Add configuration information to 'config.js' file (ABI and contract address)
 
