@@ -1,6 +1,6 @@
 # onchain_bridge_data_service
 
-A framework to deploy smart contracts and subscribe to events for automated response from 3rd party systems.
+A framework to deploy smart contracts and subscribe to events for automated response from 3rd party systems. This application also automates writing back data to the smart contract when a request is heard.
 
 ## Step-By-Step guide to deploy smart contract on EVM blockchain and configure automation node
 
