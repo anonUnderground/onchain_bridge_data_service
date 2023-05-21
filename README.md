@@ -50,131 +50,80 @@ npm install @truffle/hdwallet-provider
    - Update the .env file with your secret phrase and RPC endpoint
    - You may need to enable scripts in your directory, you can do this for a local user by running the following in the terminal:
 
-   1) Set-ExecutionPolicy -Scope CurrentUser
-   2) ExecutionPolicy: RemoteSigned
+```bash
 
-   - Run the following in the terminal: truffle init
+Set-ExecutionPolicy -Scope CurrentUser
+
+```
+
+```bash
+
+ExecutionPolicy: RemoteSigned
+
+```
+
+   - Run the following in the terminal:
+
+```bash
+
+ExecutionPolicy: truffle init
+
+```
    - This will create truffle-config.js and contracts, migrations, and test folders
    - If you wish to work with this repository there is no need to overwrite the files
-   - Install dotenv by running "npm install dotenv" in the terminal
+   - 
+   - Install dotenv:
+
+```bash
+
+npm install dotenv
+
+```
 
 ## 8. Compile Smart Contracts
 
-   - Put your smart contract into the smart contracts folder with proper naming convention
-   - Run "truffle compile" in the terminal
+   - Put your smart contract into the smart contracts folder with proper naming convention.
+   - Compile smart contract by running
+
+```bash
+
+truffle compile
+
+```
    - This will create the "build" folder with the contract JSON after compilation
    - Ensure namimg convetnion in 2_deploy_contracts.js file matches the solidity smart contract you are deploying
  
 
 
-
 ## 9. Deploy Smart Contract to blockchain
 
-   - Run "truffle migrate --network sepolia" in the terminal
+   - Deploy Smart contract to Sepolia ETH Testnet by running:
 
-The logs of a succesful deploymnet look like this:
+```bash
 
-////////////////////////////////////////////////////////////////
+truffle migrate --network sepolia
 
-> Compiled successfully using:
-   - solc: 0.8.20+commit.a1b79de6.Emscripten.clang
-⠏ Fetching solc version list from solc-bin. Attempt #1
-⠹ Fetching solc version list from solc-bin. Attempt #1
-Migrations dry-run (simulation)
-===============================
-> Network name:    'sepolia-fork'
-> Network id:      11155111
-> Block gas limit: 30000000 (0x1c9c380)
-
-
-2_deploy_contracts.js
-=====================
-⠧ Fetching solc version list from solc-bin. Attempt #1
-   Deploying 'ResponseContract'
-   ----------------------------
-   > block number:        3531627 solc-bin. Attempt #1                                                                                                              
-   > block timestamp:     1684690314
-   > account:             0x9acded31Eb1A4E4CB2cF53403dcaFf3ABE6eB897
-   > balance:             0.498302512495247035
-   > gas used:            678995 (0xa5c53)
-   > gas price:           2.500000007 gwei
-   > value sent:          0 ETH
-   > total cost:          0.001697487504752965 ETH
-
-   -------------------------------------
-   > Total cost:     0.001697487504752965 ETH
-
-Summary
-=======
-> Total deployments:   1
-> Final cost:          0.001697487504752965 ETH
-
-
-⠴ Fetching solc version list from solc-bin. Attempt #1
-⠹ Fetching solc version list from solc-bin. Attempt #1
-Starting migrations...
-======================
-> Network name:    'sepolia'
-> Network id:      11155111
-> Block gas limit: 30000000 (0x1c9c380)
-
-
-2_deploy_contracts.js
-=====================
-⠦ Fetching solc version list from solc-bin. Attempt #1
-   Deploying 'ResponseContract'
-   ----------------------------
-   > transaction hash:    0x77ba12c188c13987df67d37878bf341b9985a39495e5aa7877c63088b2e92760
-   > Blocks: 0            Seconds: 4lc-bin. Attempt #1
-   > contract address:    0xC72968e4E4BE0F1175a645f63B57a7700e21D77f
-   > block number:        3531631
-   > block timestamp:     1684690320
-   > account:             0x9acded31Eb1A4E4CB2cF53403dcaFf3ABE6eB897
-   > balance:             0.49830251249456804
-   > gas used:            678995 (0xa5c53)
-   > gas price:           2.500000008 gwei
-   > value sent:          0 ETH
-   > total cost:          0.00169748750543196 ETH
-
-   Pausing for 2 confirmations...
-
-   -------------------------------
-   > confirmation number: 1 (block: 3531632)Attempt #1
-   > confirmation number: 2 (block: 3531633)Attempt #1
-   > Saving artifacts
-   -------------------------------------
-   > Total cost:     0.00169748750543196 ETH
-
-Summary
-=======
-> Total deployments:   1
-> Final cost:          0.00169748750543196 ETH
-
-///////////////////////////////////////////////////////////////////////////////
+```
 
    - Note the contract address as this is the Hash ID of the deployed contract
-   - Logs are useful for gas optimization
 
 
 ## 10. Validate smart contract
 
-   - Deployed contract address:0xC72968e4E4BE0F1175a645f63B57a7700e21D77f
+   - Deployed contract address: 0xC72968e4E4BE0F1175a645f63B57a7700e21D77f
    - Here the public link the deployment: https://sepolia.etherscan.io/address/0xC72968e4E4BE0F1175a645f63B57a7700e21D77f#code
    - To make your deployed contract easier to use, please [verify the source code](https://www.youtube.com/watch?v=dvvaBq6d_dE&ab_channel=MoralisWeb3).
+   - Be sure to get your EtherScan API Key and update your .env file
    - [Truffle can also be used to verify a smart contract](https://medium.com/quick-programming/verify-a-smart-contract-on-etherscan-using-truffle-cb2656fd9c41).
 
-   - Using the Truffle validation plugin, run "truffle run verify ResponseContract --network sepolia" to validate our deployed smart contract
+   - If using the Truffle plugin from above, run the following in your terminal to validate the smart contact:
 
-   - Succesful validation will return a log similar to this:
+```bash
 
-Verifying contracts on etherscan
-   Verifying ResponseContract
-   Pass - Verified: https://sepolia.etherscan.io/address/0xC72968e4E4BE0F1175a645f63B57a7700e21D77f#code
-   Successfully verified 1 contract(s).
-Verifying contracts on sourcify
-   Verifying ResponseContract
-   Pass - Verified: https://sourcify.dev/#/lookup/0xC72968e4E4BE0F1175a645f63B57a7700e21D77f
-   Successfully verified 1 contract(s).
+truffle run verify ResponseContract --network sepolia
+
+```
+
    
 ## 11. Configure Automation Node
    
@@ -183,3 +132,15 @@ Verifying contracts on sourcify
 ![11 - Source Code](https://github.com/anonUnderground/onchain_bridge_data_service/assets/134157241/11876898-e91b-4295-b677-bd3bf4c4896a)
 
    - Add configuration information to 'config.js' file (ABI and contract address)
+
+   - Run the following code to listen for events
+
+```bash
+
+node index.js
+
+```
+
+Code currently returns events via a block polling method. Code is unstable and breaks due to missing error handling. Write-back automation also not implemented.
+
+index.js is currently broken and will be resolved in the next fix
