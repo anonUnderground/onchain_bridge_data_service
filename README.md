@@ -183,4 +183,8 @@ Verifying contracts on sourcify
    Pass - Verified: https://sourcify.dev/#/lookup/0xC72968e4E4BE0F1175a645f63B57a7700e21D77f
    Successfully verified 1 contract(s).
    
+   ## 10. Configure Automation Node
    
+      1) Grab contract address and ABI from "contract" tab https://sepolia.etherscan.io/address/0xC72968e4E4BE0F1175a645f63B57a7700e21D77f#code
+      
+![11 - Source Code](https://github.com/anonUnderground/onchain_bridge_data_service/assets/134157241/11876898-e91b-4295-b677-bd3bf4c4896a)
