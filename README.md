@@ -48,7 +48,7 @@ A framework to deploy smart contracts and subscribe to events for automated resp
 npm install -g truffle
 
    - You also need to install HDWallet Provider by running the following in ther teminal:
-   - You will need ti have [Git](Visit the official Git website: https://git-scm.com/downloads) installed on your system.
+   - You will need to have [Git](https://git-scm.com/downloads) installed on your system.
 
 npm install @truffle/hdwallet-provider
 
