@@ -71,7 +71,6 @@ ExecutionPolicy: truffle init
 ```
    - This will create truffle-config.js and contracts, migrations, and test folders
    - If you wish to work with this repository there is no need to overwrite the files
-   - 
    - Install dotenv:
 
 ```bash
